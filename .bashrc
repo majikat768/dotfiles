@@ -201,7 +201,6 @@ fi
 export GPGKEY=604AEBE1
 
 alias please='sudo $(history -p !!)'
-alias google='google-drive-ocamlfuse ~/googledrive && echo google drive mounted'
 alias fehr='feh --randomize --bg-max ~/Pictures/backgrounds/*'
 printf '\n'
 
