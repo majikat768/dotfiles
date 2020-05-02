@@ -34,8 +34,8 @@ client.unfocused            $black          $darkpurple     $darkgrey
 client.focused_inactive     $black          $darkgrey       $lightgrey
 client.urgent               $red            $red            $black
  
-new_window none 0
-new_float normal 1
+#new_window none 0
+#new_float normal 1
 
 # compton window compositor
 exec --no-startup-id compton
@@ -45,7 +45,7 @@ exec --no-startup-id compton
 font pango:Terminus 12
 
 # background
-exec --no-startup-id feh --randomize --bg-fill /hdd/Pictures/*
+exec --no-startup-id feh --randomize --bg-center /home/michael/Pictures/backgrounds/reddit/
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -139,7 +139,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+#bindsym $mod+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -242,7 +242,7 @@ bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 bar {
         position top
         font pango:Terminus 10
-        height 28
+        #height 28
         strip_workspace_numbers yes
         colors {
             separator #968b92
@@ -255,7 +255,7 @@ bar {
             inactive_workspace  #333333     #333333         #cccccc
             urgent_workspace    #d33682     #d33682         #fdf6e3
         }
-        status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
+        status_command i3blocks -c ~/.config/i3/i3blocks.conf
         #status_command i3status
         tray_output primary
 }
